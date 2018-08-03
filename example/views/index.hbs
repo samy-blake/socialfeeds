@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<table style="max-width: 1200px; width: 100%; margin: auto;" border="1">
+		<thead>
+			<tr>
+				<th>
+					state
+				</th>
+				<th>
+					auth
+				</th>
+				<th>
+					test
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Instagramm -->
+			<tr>
+				<td>
+					{{#if online.instagram}}
+						online
+					{{else}}
+						offline
+					{{/if}}
+				</td>
+				<td>
+					<a href="/instagram-auth">
+						instagramm-auth
+					</a>
+				</td>
+				<td>
+					{{#if online.instagram}}
+						<a href="/instagram">
+							klick
+						</a>
+					{{else}}
+						offline
+					{{/if}}
+				</td>
+			</tr>
+			<!-- Facebook -->
+			<tr>
+				<td>
+					{{#if online.facebook}}
+						online
+					{{else}}
+						offline
+					{{/if}}
+				</td>
+				<td>
+					<a href="/facebook-auth">
+						facebook-auth
+					</a>
+				</td>
+				<td>
+					{{#if online.facebook}}
+						<a href="/facebook">
+							klick
+						</a>
+					{{else}}
+						offline
+					{{/if}}
+				</td>
+			</tr>
+			<!-- Twitter -->
+			<tr>
+				<td>
+					{{#if online.twitter}}
+						online
+					{{else}}
+						offline
+					{{/if}}
+				</td>
+				<td>
+					<a href="/twitter">
+						twitter-auth
+					</a>
+				</td>
+				<td>
+					-
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
